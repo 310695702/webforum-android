@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="color200">#C8C8A9</color>
+    <color name="colorTitle">#279B61</color>
+    <color name="colorGrey">#66919191</color>
+    <color name="btn_blue_pressed">#00E2FF</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="color40Blue">#409EFF</color>
+    <color name="color88Blue">#88409EFF</color>
+    <color name="colorTextBlue">#03A9F4</color>
+    <color name="btn_blue_pressed2">#00000000</color>
+    <color name="colorBlack">#3A3A3A</color>
+    <color name="colorGreen">#1afa29</color>
+    <color name="colorHighGreen">#45FF53</color>
+    <color name="colorLoginHint">#E1E1E1</color>
+    <color name="colorHighGrey">#EAEDF4</color>
+    <color name="colorlowGreen">#EFFFF4</color>
+    <color name="colorRed">#A9393B</color>
+    <color name="colorRedPoint">#d81e06</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="text_Grey">#c1c1c2</color>
+    <color name="bg_0">#111111</color>
+    <color name="bg_1">#001f3f</color>
+    <color name="bg_2">#0074d9</color>
+    <color name="bg_3">#7fdbff</color>
+    <color name="bg_4">#39cccc</color>
+    <color name="bg_5">#3d9970</color>
+    <color name="bg_6">#2ecc40</color>
+    <color name="bg_7">#01ff70</color>
+    <color name="bg_8">#ffdc00</color>
+    <color name="bg_9">#ff851b</color>
+    <color name="bg_10">#ff4136</color>
+    <color name="bg_11">#A480E3</color>
+    <color name="bg_12">#E0F012BE</color>
+    <color name="bg_13">#b10dc9</color>
+    <color name="bg_14">#AAAAAA</color>
+    <color name="bg_15">#DDDDDD</color>
+
+</resources>

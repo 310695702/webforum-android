@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kcbs.webforum">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".WebApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".activity.PostActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.UserActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FunsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FallowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".activity.MyfallowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:name=".activity.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MajorActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.NewPostActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.NewCommentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.GeQian"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MsgActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ContentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.CommentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.UserInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TcpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.AddCategoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:authorities="com.bysj.provider"
+            android:name=".provider.FileProVider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

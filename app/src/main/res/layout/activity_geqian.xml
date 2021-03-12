@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:paddingTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back"
+            android:onClick="GeQianClick"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="编辑个签"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="GeQianClick"/>
+    </LinearLayout>
+    <EditText
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_text"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:maxLength="50"
+        android:background="@null"
+        android:layout_below="@id/ll_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="left"
+        />
+</RelativeLayout>

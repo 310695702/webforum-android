@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/ll_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:paddingTop="18dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back"
+            android:onClick="AddCategoryClick"/>
+
+        <TextView
+            android:id="@+id/tv_tool"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="新增分类"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ok"
+            android:onClick="AddCategoryClick"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_categoryName"
+        android:hint="请输入新增分类名称"
+        android:background="@null"
+        android:gravity="center"
+        android:textColorHint="@color/colorHighGrey"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/ll_actionbar"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_addImg"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/et_categoryName"
+        android:text="选择分类图片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="AddCategoryClick"/>
+    <ImageView
+        android:id="@+id/iv_categoryImage"
+        android:layout_below="@id/tv_addImg"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

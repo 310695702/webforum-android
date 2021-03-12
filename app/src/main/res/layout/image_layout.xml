@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rv_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:background="#000"
+    tools:context=".activity.ImageActivity">
+    <ImageSwitcher
+        android:background="#000"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageswitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        >
+
+    </ImageSwitcher>
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textColor="#fff"
+        android:id="@+id/tv_image"
+        android:textSize="14sp"
+        android:text="1/30"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
